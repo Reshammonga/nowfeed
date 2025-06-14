@@ -5,7 +5,7 @@ import {  Route ,Routes} from 'react-router-dom'
 
 
 function App() {
-  const apiKey=process.env.REACT_APP_API_KEY;
+  const apiKey=process.env.REACT_APP_NEWS_API_KEY;
       console.log("API Key:", process.env.REACT_APP_NEWS_API_KEY);
   let country="us";
   return (
