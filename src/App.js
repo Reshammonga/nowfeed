@@ -6,9 +6,12 @@ import {  Route ,Routes} from 'react-router-dom'
 
 function App() {
   const apiKey=process.env.REACT_APP_API_KEY;
+      console.log("API Key:", process.env.REACT_APP_NEWS_API_KEY);
   let country="us";
   return (
     <>
+
+
    <NavBar></NavBar>
    <Routes>
      <Route exact path="/" element={<News pageSize={5}  apiKey={apiKey} category={"general"} country={country}></News>}></Route>
